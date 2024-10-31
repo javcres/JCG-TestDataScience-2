@@ -1,0 +1,35 @@
+# Nombre del paquete
+package_name: jcg_testdatascience_2
+
+# Ubicacion de los datos
+training_data: electricity_transformer.csv 
+
+# Nombres de los modelos finales
+pipeline_name: jcg_testdatascience_2
+pipeline_save_file: jcg_testdatascience_2_output_v
+pipeline_scaler_save_file: jcg_testdatascience_2_SCALER_output_v
+
+# Semilla para garantizar reproducibilidad
+random_seed: 2024
+
+# Variables
+target: OT
+
+date: date
+
+data_freq: h
+
+past_covariates:
+  - HUFL
+  - HULL
+  - MUFL
+  - MULL
+  - LUFL
+  - LULL
+
+
+# Parametros del modelo final
+final_model_lags: 100
+final_model_lags_past_covariates: 100
+final_model_output_chunk_length: 100
+final_model_multi_models: true
