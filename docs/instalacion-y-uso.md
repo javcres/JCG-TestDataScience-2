@@ -18,7 +18,7 @@ Si queremos ejecutar el entrenamiento del modelo utilizaremos el comando
 tox run -e train
 ```
 
-Con ello, se generará un archivo `.pkl` dentro de la carpeta `jcg_testdatascience_1/models` con el modelo entrenado.
+Con ello, se generará un archivo `.pkl` dentro de la carpeta `jcg_testdatascience_2/models` con el modelo entrenado.
 
 ### Ejecutar tests del código
 

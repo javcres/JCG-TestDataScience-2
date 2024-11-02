@@ -1,9 +1,9 @@
-site_name: Ejercicio 1 Prueba Capgemini
+site_name: Ejercicio 2 Prueba Capgemini
 nav:
 - Home: index.md
 - Instalación de dependencias y Uso: instalacion-y-uso
 - Analisis exploratorio: analisis-exploratorio.ipynb
-- Transformacion y seleccion de modelo: transformacion-seleccion-modelo.ipynb
+- Seleccion del modelo: seleccion-modelo.ipynb
 
 plugins:
   - mkdocs-jupyter
