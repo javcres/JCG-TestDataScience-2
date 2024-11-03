@@ -2,7 +2,9 @@
 
 El código proporcionado utiliza [Poetry](https://python-poetry.org/) como gestor de dependencias, por lo que el primer paso será [Instalar la herramienta](https://python-poetry.org/docs/#installing-with-pipx). Una vez instalada navegaremos a la carpeta raíz del proyecto y ejecutaremos el comando
 
-`poetry install`
+```{shell}
+poetry install
+```
 
 Con ello, ya deberíamos tener todas las dependencias para poder ejecutar tanto los jupyter notebooks como el código dentro del paquete. Se ha asegurado la reproducibilidad del modelo y los análisis mediante la definición de semillas para los casos donde interviene la aleatoriedad.
 
@@ -24,18 +26,24 @@ Con ello, se generará un archivo `.pkl` dentro de la carpeta `jcg_testdatascien
 
 Se han creado tests para las distintas partes del código. Para ejecutarlos, usaremos el comando
 
-`tox run -e test_package`
+```{shell}
+tox run -e test_package
+```
 
 ### Ejecutar checks de formateado del código
 
 Se han utilizado las librerías `mypy, flake8, isort` para formatear el código y adaptarlo a las convenciones. Para ejecutar estos checks, usaremos el comando
 
-`tox run -e checks`
+```{shell}
+tox run -e checks
+```
 
 ## Build del paquete final
 
 Por último, para construir el paquete se debe utilizar el comando
 
-`poetry build`
+```{shell}
+poetry build
+```
 
 Que nos generará los archivos `.whl` y `.tar.gz` en la carpeta `/dist`
